@@ -29,22 +29,33 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBoxSearch = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBoxSearch = new System.Windows.Forms.TextBox();
             this.elipseControl1 = new ElipseToolDemo.ElipseControl();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBoxSearch);
+            this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(330, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1054, 711);
             this.panel1.TabIndex = 0;
+            // 
+            // textBoxSearch
+            // 
+            this.textBoxSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSearch.Location = new System.Drawing.Point(14, 11);
+            this.textBoxSearch.Name = "textBoxSearch";
+            this.textBoxSearch.Size = new System.Drawing.Size(605, 24);
+            this.textBoxSearch.TabIndex = 0;
             // 
             // panel2
             // 
@@ -64,19 +75,19 @@
             this.button1.Text = "Tât cả các trường";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // textBoxSearch
-            // 
-            this.textBoxSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSearch.Location = new System.Drawing.Point(182, 12);
-            this.textBoxSearch.Name = "textBoxSearch";
-            this.textBoxSearch.Size = new System.Drawing.Size(589, 24);
-            this.textBoxSearch.TabIndex = 0;
-            // 
             // elipseControl1
             // 
             this.elipseControl1.CornerRadius = 30;
-            this.elipseControl1.TargetControl = this.textBoxSearch;
+            this.elipseControl1.TargetControl = this.panel3;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.textBoxSearch);
+            this.panel3.Location = new System.Drawing.Point(145, 64);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(654, 44);
+            this.panel3.TabIndex = 1;
             // 
             // MainScreen
             // 
@@ -89,8 +100,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainScreen";
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -102,6 +114,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBoxSearch;
         private ElipseToolDemo.ElipseControl elipseControl1;
+        private System.Windows.Forms.Panel panel3;
     }
 }
 
